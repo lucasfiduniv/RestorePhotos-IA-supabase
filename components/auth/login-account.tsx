@@ -23,7 +23,7 @@ const formSchema = z.object({
     }),
 });
 
-export function CreateAccountForm() {
+export function LoginAccountForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -70,7 +70,7 @@ export function CreateAccountForm() {
                     </FormItem>
                 )}
             />
-            <Button type="submit">Create Account</Button>
+            <Button type="submit">Login Account</Button>
         </form>
       </Form>
     </div>
