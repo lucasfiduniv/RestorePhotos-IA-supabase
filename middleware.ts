@@ -12,4 +12,4 @@ export async function middleware(req:NextRequest) {
         console.log("middleware", error)
     }
     return res
-}
+ }
